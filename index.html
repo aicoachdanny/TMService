@@ -11,6 +11,17 @@
 </head>
 
 <body>
+    <!-- KakaoTalk Share Script -->
+<script>
+
+Kakao.init('0fed1866d3e92f5da4654e2efbb07128');
+
+function shareKatalk() {
+Kakao.Link.sendScrap({
+requestUrl: location.href
+});
+};
+</script>
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <div class="file-upload">
         <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
@@ -121,17 +132,7 @@
 <!-- Share on KakaoTalk -->
 <div style="width:100%; margin:30px 0px; text-align:center;"><a href="javascript:shareKatalk()"><img src="./images/Kakao.png"></a></div>
 
-<!-- KakaoTalk Share Script -->
-<script>
 
-Kakao.init('0fed1866d3e92f5da4654e2efbb07128');
-
-function shareKatalk() {
-Kakao.Link.sendScrap({
-requestUrl: location.href
-});
-};
-</script>
 </body>
 
 <!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
