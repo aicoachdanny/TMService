@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
+    <!-- jQuery -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -116,7 +118,20 @@
   });
   
 </script>
+<!-- Share on KakaoTalk -->
+<div style="width:100%; margin:30px 0px; text-align:center;"><a href="javascript:shareKatalk()"><img src="./images/Kakao.png"></a></div>
 
+<!-- KakaoTalk Share Script -->
+<script>
+
+Kakao.init('개발자코드');
+
+function shareKatalk() {
+Kakao.Link.sendScrap({
+requestUrl: location.href
+});
+};
+</script>
 </body>
 
 <!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
